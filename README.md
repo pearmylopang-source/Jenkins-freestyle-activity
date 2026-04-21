@@ -1,15 +1,26 @@
-# Jenkins-freestyle-activity
-1. Objective
+# Jenkins Freestyle Activity
 
-To automate a Jenkins pipeline that:
-Checks out code from GitHub
-Executes a Python script
-Generates a freestyle quote
-Archives the output file
+## Objective
+This project demonstrates a Jenkins pipeline that automates:
 
-Output
-File: output/freestyle_quote.txt
-Console shows generated quote
+- Cloning a GitHub repository
+- Running a Python script to generate a freestyle quote
+- Archiving the generated output file
+- Viewing results in Jenkins stages
 
-Result
-Pipeline runs successfully and generates random quotes.
+## Project Structure
+
+- `script.py` → Python script that generates a random quote  
+- `output/` → Folder where generated file is stored  
+- `README.md` → Project documentation  
+
+## Jenkins Pipeline Stages
+
+### 1. Checkout
+Pulls code from GitHub repository.
+
+### 2. Generate Freestyle Quote
+Runs Python script:
+
+```bash
+python script.py
